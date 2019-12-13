@@ -1,0 +1,255 @@
+/* this style.css are include in ./style.php */
+/* ----- Page ----- */
+.body{
+  -webkit-box-orient    : vertical;
+  -webkit-box-direction : normal;
+  -ms-flex-direction    : column;
+  flex-direction        : column;
+  display               : -webkit-box;
+  display               : -ms-flexbox;
+  display               : flex;
+  flex-direction        : column;
+}
+#top{
+  position      : absolute;
+  background    : #131313;
+  top           : 0%;
+  left          : 0%;
+  width         : 80%;
+  height        : 15%;
+  display       : -webkit-box;
+  display       : -ms-flexbox;
+  display       : flex;
+  border-bottom : 3px solid #333;
+  z-index       : 500;
+  padding       : 0px 10%;
+  margin        : 0px auto;
+}
+
+.page{
+
+  min-height : 500px;
+  padding    : 10% 13%;
+  margin     : 30px auto auto auto ;
+  position   : relative;
+  display    : -webkit-box;
+  display    : -ms-flexbox;
+  display    : flex;
+}
+.content{
+  display: inline;
+  height: 100%;
+  width: 100;
+}
+
+.PageIcon > img{
+width  : 200px;
+height : 200px;
+
+}
+/* ----- Menu ----- */
+.nav{
+  /* margin            : 0px auto; */
+  width             : 100%;
+  -webkit-box-align : end;
+  -ms-flex-align    : end;
+  align-items       : flex-end;
+  display           : -webkit-box;
+  display           : -ms-flexbox;
+  display           : flex;
+  z-index           : 100;
+}
+.tag ul{
+  width        : calc(100% - 15px);
+  padding-left : 0px;
+}
+.nav > ul{
+  width        : 100%;
+  padding-left : 0px;
+}
+
+/* .nav ul li.tag{
+  float                    : left;
+  list-style               : none;
+  color                    : #D2D2D2;
+  width                    : calc(100% / <?=$liCount;?>);
+  bottom                   : auto;
+  height                   : 50px;
+  text-align               : center;
+  font-size                : 30px;
+  padding                  : 0px 0px;
+  vertical-align           : bottom;
+  position                 : relative;
+  top                      : 16px;
+  -webkit-transition       : ease 0.2s;
+  -o-transition            : ease 0.2s;
+  transition               : ease 0.2s;
+} */
+
+.tag:hover{
+  -webkit-box-shadow : inset 0 -50px 0 0 #D2D2D2;
+  box-shadow         : inset 0 -50px 0 0 #D2D2D2;
+  color              : #131313 !important;
+}
+
+.nav ul li.tag a{
+  display  : block;
+  position : relative;
+  top      : 6px;
+}
+
+.two-nav{
+  background-color      : #131313;
+  text-align            : center;
+  line-height           : 30px;
+  height                : 0;
+  display               : none;
+  font-size             : 18px;
+  width                 : 100%;
+  margin                : 8px 0px;
+  -webkit-margin-before : 3px;
+}
+
+.icondiv{
+  height : 100%;
+  width  : 100%;
+}
+
+#top .photo{
+  height       : 150px;
+  width        : 150px;
+  border-right : 5px solid #333;
+}
+.icon{
+  position      : relative;
+  margin        : 10px auto ;
+  padding       : 13px 25px;
+  border-radius : 50%;
+  height        : 100px;
+  width         : 100px;
+}
+
+.frow{
+  -webkit-box-orient    : horizontal;
+  -webkit-box-direction : normal;
+  -ms-flex-direction    : row;
+  flex-direction        : row;
+}
+.fcolumn{
+  -webkit-box-orient    : vertical;
+  -webkit-box-direction : normal;
+  -ms-flex-direction    : column;
+  flex-direction        : column;
+}
+.under3{
+  display               : none;
+  position              : relative;
+  -webkit-box-orient    : vertical;
+  -webkit-box-direction : normal;
+  -ms-flex-direction    : column;
+  flex-direction        : column;
+  padding               : 13px 0px;
+  font-size             : 30px;
+  height                : 50px;
+}
+.flex {
+  display : -webkit-box;
+  display : -ms-flexbox;
+  display : flex;
+}
+.hidden{
+  display : none;
+}
+
+.two-nav > a:hover{
+  text-decoration : underline;
+}
+
+.ashow{
+  text-decoration  : underline;
+  -webkit-box-pack : end;
+}
+.ashow:hover{
+  text-decoration  : none;
+  -webkit-box-pack : end;
+}
+
+.tag:hover .two-nav
+{
+  padding-top        : 0px;
+  display            : block;
+  background-color   : #131313;
+  color              : #D2D2D2;
+  top                : 0px;
+}
+
+.dropliste {
+  list-style         : none;
+  float              : left;
+  padding            : 5px 0px 5px 15px;
+  -webkit-transition : all 0.1s;
+  -o-transition      : all 0.1s;
+  transition         : all 0.1s;
+  width              : 100%;
+  text-align         : left;
+  background-color   : #131313;
+}
+
+.two-nav .dropliste:hover{
+  -webkit-box-shadow : inset 10px 0 0 0 #777;
+  box-shadow         : inset 10px 0 0 0 #777;
+}
+
+
+/* ----- page ------ */
+.textzone{
+  min-height         : 500px;
+  width              : 100%;
+  font-size          : 30px;
+  padding            : 10px 20px;
+  -webkit-box-align  : end;
+  -ms-flex-align     : end;
+  align-items        : flex-end;
+  border-right       : 1px solid #888;
+  border-left        : 1px solid #888;
+  -webkit-box-shadow : -14px 0px 17px grey ,14px 0px 17px grey;
+  box-shadow         : -14px 0px 17px grey ,14px 0px 17px grey;
+}
+
+.displayblock{
+  display: block;
+}
+
+.Competence{
+  display:block;
+}
+
+
+
+/* ----- Profile -----  */
+.link{
+}
+/* stage1 */
+#FIE{
+
+}
+
+#FIE:active .FIEtext{
+  display: block;
+}
+
+.FIEtext{
+  display : none;
+  width   : 100%;
+  height  : 100px;
+}
+
+
+
+
+/*-------wm_Modal-------*/
+.wm_Modal{
+  position : absolute;
+  display  : none;
+
+}

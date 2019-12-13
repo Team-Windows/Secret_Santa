@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./ressource/css/globalTag.css">
+  <link rel="stylesheet" href="./ressource/css/single.css">
+  <link rel="stylesheet" href="./ressource/css/WnH.css">
+  <link rel="stylesheet" href="./ressource/css/style.css">
+  <link rel="stylesheet" href="./ressource/css/master.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <script type= "text/javascript " src= "http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js "></script>
+  <script type= "text/javascript " src= "js/jquery-3.4.1.js"></script>
+  <script type= "text/javascript " src= "js/jsnow.js "></script>
+  <script type= "text/javascript " src= "js/js.js "></script>
+  <title>▬Secret santa▬</title>
+</head>
+<body >
+<div id="content" class="flex flex_col background-color-active">
+  <div class="flex_col" >
+    <form class="" action="" method="post">
+      <fieldset class="background-color-active">
+        <legend>Creation de groupe</legend>
+        <ul class="flex  aligne_end flex_row">
+          <li><input style="width : 250px;" type="text" name="group_name" placeholder="Saisir le nom du group" value=""></li>
+          <li><button type="submit" onclick="checkName()" name="check_nammegroup">check</button></li>
+          <li><input type="submit"></li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+  <div>
+    <fieldset id="groupe_infos">
+      <legend>Groupes</legend>  
+        <ul id="groupe_list" class=" flex flex_col " >
+          <li class=" wm_fz-20 ">1</li>
+          <li class=" wm_fz-20 ">2</li>
+          <li class=" wm_fz-20 ">3</li>
+          <li class=" wm_fz-20 ">4</li>
+          <li class=" wm_fz-20 ">5</li>
+        </ul>
+    </fieldset>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    $().jSnow();
+
+    getGroups("#groupe_list");
+    $("#groupe_list li").click(function(){
+      $("li").removeClass("select");
+      $(this).addClass("select");
+    });
+  })
+</script>
+</body>
+</html>
