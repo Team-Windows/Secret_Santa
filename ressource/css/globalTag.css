@@ -1,0 +1,37 @@
+html{
+  height: 100%;
+}
+body{
+  background : #DDD;
+  height : 100%;
+}
+a{
+  color           : inherit;
+  text-decoration : none;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding: 0px;
+}
+legend{
+  text-decoration : underline;
+  font-size       : 48px;
+}
+p{
+  margin: 5px 0px;
+  font-size: 20px;
+}
+details > summary {
+  font-size: larger;
+}
+details {
+  margin: 15px 20px;
+}
+details > p{
+  margin-left: 30px;
+}
+span[title]{
+  text-decoration: underline;
+}

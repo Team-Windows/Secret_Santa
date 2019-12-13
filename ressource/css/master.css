@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy&display=swap');
+
+
+body {
+    background: #111111;
+    font-family: 'Roboto', sans-serif;
+}
+
+legend {
+    font-family: 'Satisfy', cursive;
+    text-decoration: none;
+    color: #2b1d0e;
+}
+
+fieldset {
+    border-color: darkgreen;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#groups li {
+    padding: 2.5px 10px;
+    padding-right: 5px;
+}
+
+#groups li:hover {
+    background-color: #caaa;
+}
+
+#groupe_list .select {
+    background-color: #c888;
+}
+
+
+input[type="text"] {
+    width: auto;
+    height: 30px;
+    margin: 0 auto;
+    border: solid 1px #ededed;
+    border-radius: 10px;
+
+}
+
+input[type='submit'], #add-user-button {
+    position: relative;
+    background: #eee;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    text-shadow: 1px 0 0 #eee, -1px 0 0 #eee, 0 1px 0 #EEE, 0 -1px 0 #eee, 1px 1px #eee, -1px -1px 0 #eee, 1px -1px 0 #eee, -1px 1px 0 #eee;
+}
+
+/* input[type='submit']:before{
+  border-left:       solid 70px transparent;
+  border-right:      solid 70px transparent;
+  border-bottom:     solid 70px #fff;
+  -ms-transform:     rotate(-5deg);          
+  -webkit-transform: rotate(-5deg);          
+  transform:         rotate(-5deg);
+  -webkit-box-shadow:        0 0 30px #333;
+  box-shadow:        0 0 30px #333;
+  height:            0;
+  width:             0;
+} */
+
+
+.background-color-active {
+    background-color: linen;
+}
+
+#content {
+    position: relative;
+    top: 100px;
+    padding: 20px 30px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px groove darkred;
+
+}
+
+#list_group li.select {
+    background-color: #888888;
+}
+
+input[type="text"] {
+    width: auto;
+    height: 30px;
+    margin: 0 auto;
+    border: solid 1px #ededed;
+    border-radius: 10px;
+}
+
+.aligne_end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.flex_row > li {
+    margin: 0px 5px;
+}
+
+.flex_row > div {
+    margin: 5px 0px;
+
+}
+
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#canvas {
+    background-image: linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(105, 173, 212)),
+            color-stop(0.84, rgb(23, 82, 145))
+    );
+}
+#groups li, #users li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.add-group-button, #add-user-button {
+    display: block;
+
+    cursor: pointer;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+
+}
+.link-group {
+    display: block;
+}
+.del{
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+}
+#btn-wish-none
+{
+    display: none;
+}

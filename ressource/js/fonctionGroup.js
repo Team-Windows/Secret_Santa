@@ -4,6 +4,7 @@ $(document).ready(function() {
         event.preventDefault();
         addGroup();
     });
+
 });
 
 function getGroups(){
@@ -16,7 +17,7 @@ function getGroups(){
             for(let c = 0; c<groups.length; c++){
                 $("#groups").append("<li class='group''> " +
                     "" + "<a href='group.html?group="+ groups[c]._id + "'> " + groups[c].name + "</a>"  + ""
-                    + "<button class='del-group' data-id='" + groups[c]._id + "'>delete</button>  </li>");
+                    + "<i class='del-group del material-icons' data-id='" + groups[c]._id + "'>&#xe872;</i>  </li>");
             }
             $(".del-group").click(function () {
                 deleteGroup($(this))
@@ -33,7 +34,6 @@ function addGroup() {
         data : {name : name},
         format : "json",
     });
-    console.log(request);
     request.done(function( message ) {
         getGroups();
         message = message.message;

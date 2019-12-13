@@ -8,20 +8,45 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./ressource/css/globalTag.css">
+    <link rel="stylesheet" href="./ressource/css/single.css">
+    <link rel="stylesheet" href="./ressource/css/WnH.css">
+    <link rel="stylesheet" href="./ressource/css/style.css">
+    <link rel="stylesheet" href="./ressource/css/master.css">
+    <script type= "text/javascript " src= "ressource/js/jsnow.js "></script>
+    <script type= "text/javascript " src= "ressource/js/js.js "></script>
     <script src="ressource/js/fonctionGroup.js"></script>
 
 </head>
 <body>
 
-<form id="form-add-group">
-    <label for="i-group">Ajouter un groupe</label>
-    <input id="i-group" type="text" required>
-    <input id="add-group-button" form="form-add-group" type="submit" value="ajouter">
-</form>
-<div id="message"></div>
-<div>Liste de groupe</div>
-<div id="groups"></div>
-
-
+<div id="content" class="flex flex_col background-color-active">
+    <div class="flex_col" >
+        <form id="form-add-group">
+            <fieldset class="background-color-active">
+                <legend>Creation de groupe</legend>
+                <ul class="flex  aligne_end flex_row">
+                    <li><input id="i-group" style="width : 250px;" type="text" placeholder="Nom du groupe" required></li>
+                    <li><input class="add-group-button" type="submit" value="ajouter"></li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+    <div id="message"></div>
+        <fieldset id="groupe_infos">
+            <legend>Groupes</legend>
+            <div id="groups"></div>
+        </fieldset>
+    <script type="text/javascript">
+        $(function(){
+            $().jSnow();
+            getGroupsList("#groupe_list");
+            $("#groupe li").click(function(){
+                $("li").removeClass("select");
+                $(this).addClass("select");
+            });
+        })
+    </script>
+</div>
 </body>
 </html>
